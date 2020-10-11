@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="ціна жива вага, цена жывой вес, продаж свиней, статистика цен">
+    <title>Види діяльності</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" media="all" href="css/animate.css"> <!--бібліотека анімації-->
+    <script src="js/wow.min.js"></script><!--для анімації при скролі-->
+    <script>new WOW().init();</script><!--для анімації при скролі-->
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header-logo">
+              <a href="index.html"><img src="img\logo.png" width="144"></a>
+            </div>
+          </div>
+          <div class="col-lg-8 offset-lg-1">
+            <nav class="header-menu">
+              <ul class="clearfix">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="ProNas.html">Види діяльності</a></li>
+                <li><a href="vacation.html">Вакансії</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="price.html"><i>Ціни</i></a></li>
+             </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+Chart.defaults.global.elements.point.radius = 3;
+Chart.defaults.global.elements.point.hitRadius = 15;
+var chart = new Chart(ctx, {
+
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['Лип 29, 2020',
+                  'Серп 06, 2020',
+                   'Серп 13, 2020',
+                    'Серп 19, 2020',
+                     'Серп 25, 2020',
+                      'Серп 31, 2020',
+                       'Вер 08, 2020'],
+        datasets: [{
+            label: 'price',
+            backgroundColor: 'rgb(255, 99, 132, 0)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [46.3, 47.8, 47.8, 47.8, 47.8, 46.8, 46.2],
+            borderWidth: 3
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      legend:{
+        position:"bottom",
+          labels: {
+                    fontColor: "black",
+                    fontSize: 14,
+                    fontStyle: "bold"
+                }
+        },
+      title: {
+            display: true,
+            text: 'ДИНАМІКА СЕРЕДНІХ ЗАКУПІВЕЛЬНИХ ЦІН НА ЖИВЕЦЬ СВИНЕЙ ЗАБІЙНИХ КОНДИЦІЙ І-Ї КАТЕГОРІЇ',
+            fontColor: 'black',
+            fontSize: 16,
+            padding: 40
+        },
+        scales: {
+                yAxes: [{
+                    ticks: {
+                        fontColor: "green",
+                        fontSize: 14,
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        fontColor: "black",
+                        fontSize: 12,
+                    }
+                }]
+            }
+    }
+  });
+</script>
+</header>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-5">
+          <h3>Контакти</h3>
+          <p>ТОВ "АГРОПРОМИСЛОВИЙ КОМПЛЕКС НАСТАШКА"<br>вул. Миру 45а, с.Насташка,<br>Київська обл., Україна,<br>09600</p>
+        </div>
+        <div class="col-lg-4 offset-lg-1 col-md-5 col-sm-5">
+          <div class="phone-mail">
+            <p>Телефон: +38 067 440 47 41</p>
+            <p>E-mail: nastashka@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 foot">
+          <img src="img/pigfooter.png" width="140">
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

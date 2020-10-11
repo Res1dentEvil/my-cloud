@@ -1,0 +1,254 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F6F2ED;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", sans-serif;
+  color: #000000;
+}
+.container{
+	margin: 0 auto;
+	padding:60px 0px 0;
+}
+ .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.up-button {
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  bottom: 35px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  color: #544732;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #544732;
+  border-radius: 50%;
+  display:none ;
+  cursor: pointer;
+}
+.shown {
+  display: inline-block;
+}
+/*убрать рамку вокруг button*/
+button, 
+button:active, 
+button:focus {
+    outline: none !important;
+}
+header{
+	min-height: 150px;
+	background: url("../img/1.1.jpg") no-repeat;
+	background-size: cover;
+	background-position: 0% 50%;
+}
+.header-logo{
+	margin-top: -25px;
+}
+.header-menu ul{
+	margin: 0;
+	margin-top: 30px;
+	padding: 0;
+}
+.header-menu li{
+	list-style: none;
+	text-transform: uppercase;
+	float: left;
+	margin: 0;
+	margin-right: 40px;
+	padding: 0;
+	font-size: 20px;
+	line-height: 30px;
+	text-shadow: 1px 0px 2px white;
+	transition: 0.3s all;
+}
+.header-menu li:last-child{
+	margin-right: 0px;
+}
+.header-menu a{
+	color: #544732;
+}
+.header-menu a:active{
+	color: #E0BE87;
+}
+.header-menu a:hover{
+	text-decoration: none;
+}
+.header-menu li:hover{
+	transform: scale(1.1);
+	
+}
+
+/**main*****************************/
+.container{
+	padding: 60px 0;
+}
+
+/**contacts***************************/
+
+.viddil h3{
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.viddil{
+	background-color: rgb(255,255,255, 0.6);
+	padding: 45px 25px 25px 60px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	transition-duration:0.8s;
+
+}
+.viddil:hover{
+	box-shadow: 0 0 15px -5px #544732;
+	transform: scale(1.03);
+	background-color: rgb(255,255,255);
+	
+}
+.name{
+	font-weight: bold;
+	font-size: 18px;
+}
+/**main-pronas***************************/
+
+.main-pronas .row{
+	margin-bottom: 50px;
+}
+.main-pronas h3{
+	font-weight: bold;
+	margin: 80px 0 20px 0;
+	text-align: center;
+	padding:0 50px 0 50px;
+}
+.kroshku{
+	margin:0 0 60px 0;
+	color:black;
+	font-weight: normal;
+	font-size: 25px;
+	text-transform: uppercase; 
+	text-align: center;
+}
+.main-pronas p{
+	font-weight: normal;
+	font-size: 18px;
+	text-align: center;
+	padding: 0 50px; 
+}
+.main-pronas .text{
+	width: 750px;
+	height: 407px;
+	background: white;
+	padding-left: 0 90px;
+}
+.text:hover{
+	box-shadow: 0 0 15px -5px #544732;
+}
+.main-pronas img{
+	margin-top: 50px;
+}
+.left{
+	margin-left: -50px;
+}
+
+
+/**main-vacation********************/
+.main-vacation{
+	font-weight: normal;
+	font-size: 18px;
+	text-align: center;
+	padding: 0px 0;
+}
+.vacation-phone{
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 30px;
+}
+.shadows{
+	box-shadow: 0 0 15px -5px #544732;
+}
+/********chart**************************/
+.chart-container {
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  height: auto;
+  width: 65vw;
+  padding: 30px;
+  padding-top: 0px;
+  background-color: rgb(255,255,255, 0.6);
+  transition-duration:0.8s;
+}
+.chart-container:hover{
+	background-color: rgb(255,255,255, 0.9);
+	transform: scale(1.03);
+	transition-duration:0.8s;
+	box-shadow: 0 0 15px -5px #544732;
+
+}
+
+/**footer***************************/
+footer{
+	background: #544732;
+}
+footer{
+	background: #544732;
+}
+footer .container{
+	padding: 0;
+}
+footer h3{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	font-size: 26px;
+	margin-top: 40px;
+}
+footer p{
+	color: white;
+	font-size: 17px;
+	font-weight: normal;
+}
+.phone-mail{
+	margin-top: 75px;
+}
+.phone-mail p{
+	margin: 3px;
+}
+.foot{
+	position:relative;
+}
+footer img{
+	margin-top:35px;
+	position:absolute;
+	bottom:0;
+	right: 0;
+}
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+.header-menu ul,
+.header-logo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+header h1,
+.want-to-sell h2,
+.welcome-to-farm .container-fluid h2,
+.cont,
+.phone-mail
+{
+	text-align: center;
+}
